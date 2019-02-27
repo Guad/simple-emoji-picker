@@ -1,0 +1,69 @@
+.emojipicker-container {
+    position: relative;
+    float: left;
+}
+
+.emoji-toggle {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    opacity: 0.4;
+}
+
+.emoji-toggle:hover {
+    opacity: 1;
+}
+
+.emoji-btn {
+    padding: 5px;
+}
+
+.emoji-btn:hover {
+    background-color: #eeeeee;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.emoji-window-closed {
+    display: none !important;
+}
+
+.emoji-window {
+    position: absolute;
+    padding: 5px;
+    top: 42px;
+    right: 10px;
+
+    background: white;
+    border: solid black 1px;
+    border-radius: 5px;
+
+    max-width: 200px;
+    max-height: 300px;
+    overflow-x:hidden;
+    overflow-y: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    z-index: 1000;
+}
+
+.emoji-section {
+    width: 100%;
+    font-family: sans-serif;
+    background: #eeeeee;
+    border-radius: 5px;
+    padding: 3px 0;
+    flex-grow: 1;
+    text-align: center;
+    top: 0;
+    position: sticky;
+}
+
+
+.emoji-window::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
